@@ -125,10 +125,10 @@ export const LandingPage = () => {
       >
         <Row className="text-left addPadding px-5">
           <Row className="display-1 text-white" id="header">
-            Expense reimbursements<br></br>made simple
+            Ethical Issues<br></br>made simple
           </Row>
           <Row className="display-6 text-white px-3" id="small-header">
-            for every business lunch and beyond
+            for every ethical question and beyond
           </Row>
         </Row>
       </Container>
@@ -140,7 +140,7 @@ export const LandingPage = () => {
         className={`${aboutLoaded ? "unhideIt" : "hideIt"} addPadding1 px-3`}
       >
         <Row className="text-left mt-5 mb-3 ">
-          <Col className="display-4" id="header"> About Us</Col>
+          <Col className="display-4" id="header"> Ask you ethical questions here. </Col>
         </Row>
         <Row className="text-left pt-3 mb-5">
           <Col className="fs-2" id="small-header">
