@@ -139,6 +139,53 @@ export const LandingPage = () => {
         ref={aboutUsRef}
         className={`${aboutLoaded ? "unhideIt" : "hideIt"} addPadding1 px-3`}
       >
+  <Row className="text-left mt-5 mb-3 ">
+          <Col className="display-4" id="header"> Enter an Ethical Issue that you want to learn about into the Text Field Below. </Col>
+        </Row>
+
+        <Row className="text-left pt-3 mb-5">
+          <Col className="fs-2" id="small-header">
+           Select the Button with the Position you want to Read About!
+          </Col>
+          
+        </Row>
+        <Row>
+        <Col><Button
+                className="col-12 mt-2 submitButton"
+            
+                // onClick={() => {
+                //   login();
+                // }}
+              >
+                NEUTRAL
+              </Button></Col>
+        <Col><Button
+                className="col-12 mt-2 submitButton"
+            
+                // onClick={() => {
+                //   login();
+                // }}
+              >
+                FOR
+              </Button></Col>
+        <Col><Button
+                className="col-12 mt-2 submitButton"
+            
+                // onClick={() => {
+                //   login();
+                // }}
+              >
+                AGAINST
+              </Button></Col>
+              </Row>
+
+            
+
+        
+
+      
+
+
         <Row className="text-left mt-5 mb-3 ">
           <Col className="display-4" id="header"> Ask you ethical questions here. </Col>
         </Row>
@@ -155,6 +202,8 @@ export const LandingPage = () => {
           </Col>
         </Row>
       </Container>
+
+      
 
       {/* 
         Add more content down here, such as an about section, a mission
@@ -186,11 +235,10 @@ export const LandingPage = () => {
             ></Image>
           </Col>
           <Col className="p-0 my-auto text-center">
-            <div className="display-6 text-white" id="header">Employee</div>
+            <div className="display-6 text-white" id="header">Step One</div>
             <p className="fs-3 p-3 text-white" id="small-header">
               {" "}
-              As an employee, you can submit requests for reimbursement,
-              which will then be reviewed by a financial manager or the CEO.
+              Choose and ethical issue that you would like to learn more about surrounding technology and computing. 
             </p>
           </Col>
         </Row>
@@ -209,15 +257,14 @@ export const LandingPage = () => {
             xxl
           >
 
-            <div className="display-6 text-white" id="header" >Financial Manager</div>
+            <div className="display-6 text-white" id="header" >Step Two</div>
             <p className="fs-3 p-3 text-white" id="small-header">
               {" "}
-              As a financial manager, you can approve or deny
-              reimbursement requests made by employees.
+              Type the issue into the text field.
             </p>
           </Col>
           <Col className="p-0" xs={12} sm={12} md={12} lg xl xxl>
-            <Image src="/employee.png" className="img-fluid mx-auto"></Image>
+            <Image src="/employee.gif" className="img-fluid mx-auto"></Image>
           </Col>
         </Row>
         <Row
@@ -230,16 +277,35 @@ export const LandingPage = () => {
 
           <Col className="p-0 my-auto text-center">
             <div className="">
-              <div className="display-6 text-white" id="header">CEO</div>
+              <div className="display-6 text-white" id="header">Step Three</div>
               <p className="fs-3 p-3 text-white" id="small-header">
-                As a CEO, you can add your company and approve or deny
-                reimbursement requests. You can also add or remove
-                employees from the company.
+                Select a button depending on if you world like to see results for, against, or neutral for the ethical issue. 
               </p>
             </div>
           </Col>
 
         </Row>
+
+        <Row
+          ref={howItWorksRef4}
+          className={`main-bg ${worksLoaded4 ? "unhideIt" : "hideIt"}`}
+        >
+     
+
+          <Col className="p-0 my-auto text-center">
+            <div className="">
+              <div className="display-6 text-white" id="header">Step Four</div>
+              <p className="fs-3 p-3 text-white" id="small-header">
+                The output will display in the chatgpt output box.  
+              </p>
+            </div>
+          </Col>
+          <Col className="p-0 " xs={12} sm={12} md={12} lg xl xxl>
+            <Image src="/newImage.jpg" className="img-fluid mx-auto"></Image>
+          </Col>
+
+        </Row>
+        
       </Container>
 
       {/* <Container> Commenting out for now
@@ -298,7 +364,7 @@ export const LandingPage = () => {
             <div id="small-header" className="fs-4 text-light">
 
               <p className="text-center">
-                <strong id="header">Email:</strong> DoughBack@gmail.com
+                <strong id="header">Email:</strong> EthicCode@gmail.com
               </p>
 
             </div>
