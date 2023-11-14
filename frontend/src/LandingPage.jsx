@@ -67,7 +67,7 @@ export const LandingPage = () => {
     } else if (location == 2) {
       window.scrollTo({ top: (aboutUsRef.current.offsetTop - homeRef.current.offsetTop), behavior: "smooth" });
     } else if (location == 3) {
-      window.scrollTo({ top: (howItWorksRef2.current.offsetTop - homeRef.current.offsetTop), behavior: "smooth" });
+      window.scrollTo({ top: (howItWorksRef1.current.offsetTop - homeRef.current.offsetTop), behavior: "smooth" });
     } else if (location == 4) {
       window.scrollTo({ top: (contactUsRef.current.offsetTop - homeRef.current.offsetTop), behavior: "smooth" });
     }
@@ -99,14 +99,14 @@ export const LandingPage = () => {
                 Home
               </Nav.Link>
               <Nav.Link eventKey="2" onClick={() => { scrollTo(2) }} className="text-light mx-5 text-nowrap">
-                About Us
+                Ask Question
               </Nav.Link>
 
               <Nav.Link eventKey="3" onClick={() => { scrollTo(3) }} className="text-light mx-5  text-nowrap">
                 How it Works
               </Nav.Link>
               <Nav.Link eventKey="4" onClick={() => { scrollTo(4) }} className="text-light mx-5  text-nowrap">
-                Contact
+              About Us
               </Nav.Link>
             </Nav>
             <div className="nav-font">
@@ -225,8 +225,8 @@ export const LandingPage = () => {
         <br /> */}
 
         <Row
-          ref={howItWorksRef2}
-          className={` main-bg ${worksLoaded2 ? "unhideIt" : "hideIt"}`}
+          ref={howItWorksRef1}
+          className={` main-bg ${worksLoaded1 ? "unhideIt" : "hideIt"}`}
         >
           <Col className="p-0" xs={12} sm={12} md={12} lg xl xxl>
             <Image
@@ -243,8 +243,8 @@ export const LandingPage = () => {
           </Col>
         </Row>
         <Row
-          ref={howItWorksRef3}
-          className={`main-bg ${worksLoaded3 ? "unhideIt" : "hideIt"}`}
+          ref={howItWorksRef2}
+          className={`main-bg ${worksLoaded2 ? "unhideIt" : "hideIt"}`}
         >
           <Col
             className="p-0 my-auto text-center"
@@ -268,8 +268,8 @@ export const LandingPage = () => {
           </Col>
         </Row>
         <Row
-          ref={howItWorksRef4}
-          className={`main-bg ${worksLoaded4 ? "unhideIt" : "hideIt"}`}
+          ref={howItWorksRef3}
+          className={`main-bg ${worksLoaded3 ? "unhideIt" : "hideIt"}`}
         >
           <Col className="p-0 " xs={12} sm={12} md={12} lg xl xxl>
             <Image src="/boss.jpg" className="img-fluid mx-auto"></Image>
@@ -355,7 +355,7 @@ export const LandingPage = () => {
         className={`m-0 p-0`}
       >
         <Row className="contact_us m-0">
-          <div className="display-6 text-center mt-3 mb-3 pt-3 text-light" id="header">Contact Us
+          <div className="display-6 text-center mt-3 mb-3 pt-3 text-light" id="header">About Us
 
           </div>
 
@@ -364,7 +364,7 @@ export const LandingPage = () => {
             <div id="small-header" className="fs-4 text-light">
 
               <p className="text-center">
-                <strong id="header">Email:</strong> EthicCode@gmail.com
+                <strong id="header">Simon Park: </strong> simonp@smu.edu
               </p>
 
             </div>
@@ -375,7 +375,7 @@ export const LandingPage = () => {
 
 
               <p className="text-center">
-                <strong id="header">Address:</strong> 6425 Boaz Lane Dallas TX 75205
+                <strong id="header">Ethan Zech: </strong> ezech@smu.edu
               </p>
 
             </div>
@@ -386,8 +386,8 @@ export const LandingPage = () => {
 
 
               <p className="text-center">
-                <strong className="fs-4 text-light" id="header">Number:</strong>
-                <span className="fs-4 text-light"> 123-456-7890</span>
+                <strong className="fs-4 text-light" id="header">Noah Henson: </strong>
+                <span className="fs-4 text-light"> nbhenson@smu.edu</span>
               </p>
 
             </div>
